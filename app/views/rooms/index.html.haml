@@ -1,4 +1,4 @@
-=render partial: 'layouts/header'
+= render partial: 'layouts/header'
 
 - if user_signed_in?
   = link_to "ログアウト", destroy_user_session_path, method: 'delete', class: "menu-bar__right__text"
@@ -13,6 +13,6 @@
   .main__Large-frame
     %ul.main__Large-frame__frame
       - @rooms.each do |room|
-        = link_to "/rooms/#{room.lodging_id}", class: "main__Large-frame__frame__box", method: :get do
+        = link_to room_path(room), class: "main__Large-frame__frame__box", method: :get do
           %li.main__Large-frame__frame__box__li
             = room.lodging_id
