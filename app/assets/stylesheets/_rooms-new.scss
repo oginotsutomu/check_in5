@@ -1,0 +1,29 @@
+.room-main{
+  height: calc(100vh -100px);
+  width: 100vw;
+  &__form{
+    margin: 30px;
+    &__box{
+      display: block;
+      margin-top: 30px;
+      &__name{
+        font-size: 16px;
+        height: 50px;
+        width: 400px;  
+      }
+      &__area{
+        font-size: 16px;
+        height: 200px;
+        width: 800px;
+      }
+      &__send{
+        font-size: 16px;
+        background-color: red;
+        color: white;
+        height: 40px;
+        width: 100px;
+        margin-left: 500px;
+      }
+    }
+  }
+}

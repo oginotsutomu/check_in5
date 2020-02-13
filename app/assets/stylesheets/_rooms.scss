@@ -1,0 +1,20 @@
+.main{
+  &__Large-frame{
+    height: 500px;
+    width: 100vw;
+    &__frame{
+      list-style: none;
+      margin: 20px; 
+      &__box{
+        text-decoration: none;
+        &__li{
+          margin: 15px;
+          background-color: rgb(228, 161, 161);
+          height: 200px;
+          width: 200px;
+          float: left;
+        }
+      }
+    }
+  }
+}

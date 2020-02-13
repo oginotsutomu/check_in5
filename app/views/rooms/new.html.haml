@@ -1,0 +1,24 @@
+=render partial: 'layouts/header'
+
+.room-main
+  = form_with model: @room, class: 'room-main__form' do |f|
+    .room-main__form__box
+      代表者のお名前
+      = f.text_field :name, class: 'room-main__form__box__name', placeholder: '例）山田　彩'
+    .room-main__form__box
+      宿泊到着時間
+      = f.text_field :time, class: 'room-main__form__box__name', placeholder: '例）18時'
+    .room-main__form__box
+      部屋番号
+      = f.text_field :lodging_id, class: 'room-main__form__box__name', placeholder: '例）101'
+    .room-main__form__box
+      電話番号
+      = f.text_field :phone, class: 'room-main__form__box__name', placeholder: '例）080xxxxxxxx'
+    .room-main__form__box
+      食事の有無レストランの予約状況
+      = f.text_area :meal, rows: 10, wrap: "soft", class: 'room-main__form__box__area',  placeholder: "レストラン予約状態　プランなど　"
+    .room-main__form__box
+      人数
+      = f.text_field :people, class: 'room-main__form__box__name', placeholder: '例）2'
+    .room-main__form__box
+      = f.submit '登録する', class: 'room-main__form__box__send'
