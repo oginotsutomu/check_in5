@@ -14,5 +14,8 @@
     %ul.main__Large-frame__frame
       - @rooms.each do |room|
         = link_to room_path(room), class: "main__Large-frame__frame__box", method: :get do
-          %li.main__Large-frame__frame__box__li
+          %li.main__Large-frame__frame__box__li.lesson-hover
             = room.lodging_id
+            %p.text-contents 
+              = room.name
+              

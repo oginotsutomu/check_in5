@@ -1,0 +1,19 @@
+.show-main{
+  height: 600px;
+  width: 500px;
+  padding-top: 50px;
+  padding-left: 100px;
+  &__box{
+    padding: 5px;
+    height: 80px;
+    width: 400px;
+    border: 1px solid;
+    font-size: 20px;
+  }
+  &__text{
+    padding: 3px;
+    height: 120px;
+    width: 700px;
+    border: 1px solid;
+  }
+}

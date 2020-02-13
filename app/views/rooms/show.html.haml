@@ -1,9 +1,21 @@
 = render partial: 'layouts/header'
 .show-main
 
-  = @room.name
-  = @room.phone
-  = @room.lodging_id
-  = @room.people
-  = @room.time
-  = @room.meal
+  .show-main__box
+    %p代表者
+    = @room.name
+  .show-main__box
+    %p到着時間
+    = @room.time
+  .show-main__box
+    %p電話番号
+    = @room.phone
+  .show-main__box
+    %p部屋番号
+    = @room.lodging_id
+  .show-main__box
+    %p人数
+    = @room.people
+  .show-main__text
+    %pレストラン予定
+    = @room.meal

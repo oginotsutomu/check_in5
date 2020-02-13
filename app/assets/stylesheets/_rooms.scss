@@ -6,6 +6,7 @@
       list-style: none;
       margin: 20px; 
       &__box{
+        margin-left: 50px;
         text-decoration: none;
         &__li{
           margin: 15px;
@@ -13,6 +14,12 @@
           height: 200px;
           width: 200px;
           float: left;
+          .text-contents{
+            display: none;
+          }
+          .text-active{
+            display: block;
+          }
         }
       }
     }
