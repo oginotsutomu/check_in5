@@ -1,0 +1,12 @@
+= render partial: 'layouts/header'
+= link_to "新規作成", new_recipe_path, class: "menu-bar__right__text"
+- @recipes.each do |recipe|
+  .content
+    .content__box
+      .content__box__top
+        = link_to recipe.title, recipe_path(recipe), class: "content__box__top__title"
+        -# = link_to text.title, text_path(text.id), class: "content__box__top--title"
+      .content__box__bottom
+        .content__box__bottom--userName
+        .content__box__bottom--date
+          = recipe.created_at

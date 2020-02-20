@@ -1,10 +1,14 @@
 .header-box{
   height: 60px;
   width: 100vw;
+  padding-top: 20px;
+  padding-left: 20px;
   background-color: rgb(236, 234, 234);
   .logo {
     height: 36px;
     width: 130px;
-    margin: 10px 10px;
+  }
+  .header-box__recipe{
+    float: right;
   }
 }

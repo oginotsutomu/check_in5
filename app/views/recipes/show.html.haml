@@ -1,0 +1,8 @@
+.post
+  .post__Title
+    = @recipe.title
+  .post__Image
+    = video_tag @recipe.video.url.to_s,loop: true, controls: true, width: 550, id: "mv"
+    = image_tag @recipe.image.url size: '440x400' if @recipe.image.present?
+  .post__Date
+    = simple_format @recipe.recipe
