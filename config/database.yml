@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: check_in5_production
-  username: check_in5
-  password: <%= ENV['CHECK_IN5_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
