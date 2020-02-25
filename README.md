@@ -1,7 +1,7 @@
 # check_in
-分かりやすくてカッコイイ名前をつける（今回は"hoge"という名前をつける）
+ホテル業務の管理アプリ
  
-"hoge"が何かを簡潔に紹介する
+https://i.gyazo.com/9c5f3bec4c4c08051ba86f708b6d9013.png
  
 # DEMO
  
