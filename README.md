@@ -1,9 +1,8 @@
 # check_in
 ホテル業務の管理アプリ
- 
-https://i.gyazo.com/9c5f3bec4c4c08051ba86f708b6d9013.png
- 
-# DEMO
+
+ # DEMO
+<img src="https://i.gyazo.com/9c5f3bec4c4c08051ba86f708b6d9013.png">
  
 "hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
  
