@@ -1,15 +1,44 @@
 = render partial: 'layouts/header'
 
 
+.parallax
+  #dg1
+    #dg2
+      %h1 check_in
+      #slide
+        #sections
+          %section.section aaa
+          %section.section bbb
+          %section.section ccc
+          %section.section ddd
+      %ul
+        %li.click
+          %a.click.crrrent{:href => "#"} 1
+        %li
+          %a.click{:href => "#"} 2
+        %li
+          %a.click{:href => "#"} 3
+        %li
+          %a.click{:href => "#"} 4
+
+
+
 
 .main
-  - if user_signed_in?
-    = link_to "ログアウト", destroy_user_session_path, method: 'delete', class: "menu-bar__right__text"
-  - else
-    = link_to "ログイン", new_user_session_path, class: "menu-bar__right__text"
-    = link_to "新規登録", new_user_registration_path, class: "menu-bar__right__text"
-  = link_to "登録画面へ", rooms_new_path, class: "main__Large-frame__frame__box"
-  = link_to "レシピ作成", recipes_path, class: "header-box__recipe"
+  %nav
+    %button
+      %img{:src => "fmarket_logo_red.svg"}
+    %ul.button-ul
+      %li
+        - if user_signed_in?
+          = link_to "ログアウト", destroy_user_session_path, method: 'delete', class: "button-ul__list"
+        - else
+          = link_to "ログイン", new_user_session_path, class: "button-ul__list"
+          = link_to "新規登録", new_user_registration_path, class: "button-ul__list"
+      %li
+        = link_to "登録画面へ", rooms_new_path, class: "button-ul__list"
+      %li
+        = link_to "レシピ作成", recipes_path, class: "button-ul__list"
 
   .main__Large-frame
     %ul.main__Large-frame__frame
