@@ -1,4 +1,6 @@
 class RoomsController < ApplicationController
+  before_action  :set_data
+
   def index
     @rooms = Room.all
   end
@@ -23,6 +25,10 @@ class RoomsController < ApplicationController
   private
   def room_params
     params.require(:room).permit(:name,:phone,:meal,:people,:lodging_id,:time)
+  end
+
+  def set_data
+    @rooms = Room.all
   end
 end
 
